@@ -8,7 +8,7 @@ coverage:
   status:
     project:
       default:
-        target: 91%
+        target: 92%
     # patch:
     #   onboard_av_binary:
     #     target: 60%
