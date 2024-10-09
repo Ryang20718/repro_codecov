@@ -9,15 +9,15 @@ coverage:
     project:
       default:
         target: 92%
-    # patch:
-    #   onboard_av_binary:
-    #     target: 60%
-    #     flags:
-    #       - onboard_av_binary
-    #   torchscript_input_files:
-    #     target: 100%
-    #     flags:
-    #       - torchscript_input_files
+    patch:
+      onboard_av_binary:
+        target: 60%
+        flags:
+          - onboard_av_binary
+      torchscript_input_files:
+        target: 100%
+        flags:
+          - torchscript_input_files
 
 comment:
   layout:  "diff, flags, files"
@@ -27,15 +27,15 @@ comment:
   require_head: yes       
   branches: null
 
-# flags:
-#   onboard_av_binary:
-#     paths:
-#       - example/implementation.py
-#       - example/implementation_test.py
-#       - conflict.txt
-#     carryforward: false
-#   torchscript_input_files:
-#     paths:
-#       - non_example/example.py
-#       - non_example/example_test.py
-#     carryforward: false
+flags:
+  onboard_av_binary:
+    paths:
+      - example/implementation.py
+      - example/implementation_test.py
+      - conflict.txt
+    carryforward: false
+  torchscript_input_files:
+    paths:
+      - non_example/example.py
+      - non_example/example_test.py
+    carryforward: false
